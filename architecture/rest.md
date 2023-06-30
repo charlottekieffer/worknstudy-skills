@@ -6,21 +6,38 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les verbes HTTP ❌ / ✔️
-- les statuts HTTP ❌ / ✔️
-- les endpoints ❌ / ✔️
+- les verbes HTTP  ✔️
+- les statuts HTTP  ✔️
+- les endpoints  ✔️
 - CORS ❌ / ✔️
-- la nomenclature recommandée pour les routes ❌ / ✔️
+- la nomenclature recommandée pour les routes ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté  ✔️
 
-### Utilisation dans un projet ❌ / ✔️
+// exemple de création d'un "skill" dans le cadre d'une architecture REST
 
-[lien github](...)
+    create: async (req, res) => {
+        try {
+            await dataSource            // on requête la base de données
+            .getRepository(Skill)       // on vise la table "Skill"
+            .save(req.body);            // on enregistre l'information
+            res.send("Created skill");  // on renvoit un message à la création de la donnée
+            
+// le catch existe pour les cas d'erreurs
 
-Description :
+        } catch(error) {
+            console.log(error);
+            res.send("Error while creating skill");
+            }
+    }
+
+### Utilisation dans un projet  ✔️
+
+https://github.com/charlottekieffer/wild-book-typescript/blob/main/backend/src/controller/wilder.ts
+
+Description : architecture REST dans un exercice
 
 ### Utilisation en production si applicable❌ / ✔️
 
@@ -36,8 +53,12 @@ Description :
 
 ### Titre
 
-- lien
-- description
+- https://lo-victoria.com/introduction-to-cross-origin-resource-sharing-cors
+- un article sur le fonctionnement de CORS
+
+- https://blog.nicolashachet.com/developpement-php/larchitecture-rest-expliquee-en-5-regles/
+- un article sur l'architecture REST de base 
+
 
 ## 🚧 Je franchis les obstacles
 
