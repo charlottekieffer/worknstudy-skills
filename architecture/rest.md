@@ -7,16 +7,24 @@
 ## 🎓 J'ai compris et je peux expliquer
 
 - les verbes HTTP  ✔️
+    Ils définissent le type d'opération que le client souhaite effectuer sur une ressource (GET, POST, PUT, DELETE)
+
 - les statuts HTTP  ✔️
+    codes renvoyés par un serveur en réponse à une requête (ex: 404 la ressource n'a pas été trouvée)
+
 - les endpoints  ✔️
+    c'est une ressource spécifique ou un point d'accès particulier dans une API qui peut être identifiée par une URL, ils permettent de structurer l'accès aux ressources 
+
 - CORS ❌ / ✔️
+
 - la nomenclature recommandée pour les routes ✔️
+    
 
 ## 💻 J'utilise
 
 ### Un exemple personnel commenté  ✔️
 
-// exemple de création d'un "skill" dans le cadre d'une architecture REST
+<!-- exemple de création d'un "skill" dans le cadre d'une architecture REST -->
 
     create: async (req, res) => {
         try {
@@ -25,7 +33,7 @@
             .save(req.body);            // on enregistre l'information
             res.send("Created skill");  // on renvoit un message à la création de la donnée
             
-// le catch existe pour les cas d'erreurs
+<!-- le catch existe pour les cas d'erreurs -->
 
         } catch(error) {
             console.log(error);

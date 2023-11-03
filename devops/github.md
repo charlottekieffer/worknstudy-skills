@@ -6,21 +6,21 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- l'initialisation d'un projet ❌ / ✔️
-- travailler avec des branches ❌ / ✔️
-- faire une PR ❌ / ✔️
-- utiliser git rebase pour faire des commits propres ❌ / ✔️
-- utiliser les gitHub actions ❌ / ✔️
+- l'initialisation d'un projet ✔️
+- travailler avec des branches  ✔️
+- faire une PR  ✔️
+- utiliser git rebase pour faire des commits propres  ✔️
+- utiliser les gitHub actions  ✔️
 
 ## 💻 J'utilise
 
 ### Un exemple personnel commenté ❌ / ✔️
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet  ✔️
 
-[lien github](...)
+https://github.com/AlexisFaugeroux/wild-carbon/
 
-Description :
+Description : projet d'école
 
 ### Utilisation en production si applicable❌ / ✔️
 

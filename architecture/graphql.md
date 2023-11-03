@@ -7,10 +7,19 @@
 ## 🎓 J'ai compris et je peux expliquer
 
 - la différence entre REST et GraphQL ✔️
+
 - les besoins auxquels répond GraphQL ✔️
-- la définition d'un schéma
+  on récupère précisément les données recherchées, on évite les requêtes multiples (on peut regrouper plusieurs requêtes en une seule), on cotrole l'accès au données dans les resolvers (sécu)
+
+- la définition d'un schéma ✔️
+  Un schéma défini la structure des données, le type de données disponibles, les relations entre ces types et les points d'entée pour intérroger ou muter les données.
+
 - Query  ✔️
+  une requête qui permet d'interroger un serveur pour demander des données spécifiques. 
+
 - Mutation  ✔️
+  une requête qui permet d'effectuer des mises à jour de données (ex: créer un nouvel utilisateur)
+
 - Subscription ❌ / ✔️
 
 ## 💻 J'utilise
@@ -18,8 +27,8 @@ GraphQL
 
 ### Un exemple personnel commenté  ✔️
 '
-// ici nous avons une requête simple de récupération d'un seul "book", l'argument 'bookId' permet de le récupérer par son id.
-// getRepository nous permet de récupérer l'information depuis la table 'Book', le findOneByOrFail permet de récupérer un book par son id, ou renvoie un message d'erreur si la récupération est impossible. 
+<!--ici nous avons une requête simple de récupération d'un seul "book", l'argument 'bookId' permet de le récupérer par son id.
+ getRepository nous permet de récupérer l'information depuis la table 'Book', le findOneByOrFail permet de récupérer un book par son id, ou renvoie un message d'erreur si la récupération est impossible. -->
 
   @Query(() => Book)
   async getBook(@Arg('bookId') id: number): Promise<Book> {
